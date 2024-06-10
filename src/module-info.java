@@ -6,4 +6,5 @@
  *
  */
 module conditionalStatements {
+    requires kotlin.stdlib;
 }
