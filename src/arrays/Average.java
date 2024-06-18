@@ -1,4 +1,6 @@
-public class Main {
+package arrays;
+
+public class Average {
     public static  double getAverage(double[]numbers){
         double total = 0;
         for (int i = 0; i<numbers.length ; i++){
