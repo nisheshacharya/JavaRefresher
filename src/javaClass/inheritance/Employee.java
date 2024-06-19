@@ -12,7 +12,7 @@ public class Employee {
 
     }
 
-//    Getters and setters
+    //    Getters and setters
     public double getSalary() {
         return salary;
     }

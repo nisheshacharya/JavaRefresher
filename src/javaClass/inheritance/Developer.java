@@ -7,6 +7,7 @@ public class Developer extends Employee{
         this.isPermanent = isPermanent;
     }
 
+
     public boolean isPermanent() {
         return isPermanent;
     }

@@ -37,7 +37,6 @@ public class Animal {
         Animal parrot = new Animal("Parrot", true);
         parrot.setName("Green Parrot");
         parrot.animalFlies();
-
     }
 }
 
