@@ -6,33 +6,34 @@ public class Revision_Main {
 
 
     public static void main(String[] args) {
-//        swapNumbers();
-//        findMinimum();
-//        calculator();
-//        multiTable();
-//        sumOfEven();
-//        findFactorial();
-//        System.out.println(isFibonacci(5, 0, 1));
-       printFibonacci();
-
-
+        swapNumbers();
+        findMinimum();
+        calculator();
+        multiTable();
+        sumOfEven();
+        findFactorial();
+        System.out.println(isFibonacci(5, 0, 1));
+        printFibonacci();
     }
 
+//Swap Numbers
 
     public static void swapNumbers() {
-        Scanner sacnner = new Scanner(System.in);
 
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Number Swap");
         System.out.println("Enter first number: ");
-        int firstNumber = sacnner.nextInt();
+        int firstNumber = scanner.nextInt();
 
         System.out.println("Enter second number: ");
-        int secondNumber = sacnner.nextInt();
+        int secondNumber = scanner.nextInt();
 
         System.out.println("First number:" + firstNumber);
         System.out.println("Second number:" + secondNumber);
 
         System.out.println("Press 'y' and enter to swap the number");
-        String anyKey = sacnner.next();
+        String anyKey = scanner.next();
 
         int temp = firstNumber;
         firstNumber = secondNumber;
@@ -43,6 +44,7 @@ public class Revision_Main {
         System.out.println(" ");
 
     }
+//Find Minimum
 
     public static void findMinimum() {
         Scanner scanner = new Scanner(System.in);
@@ -80,7 +82,7 @@ public class Revision_Main {
         System.out.println(" ");
 
     }
-
+//Calculator
     public static void calculator() {
         Scanner scanner = new Scanner(System.in);
 
@@ -89,40 +91,28 @@ public class Revision_Main {
         System.out.println("Mini calculator");
 
         System.out.println("Enter the first number");
-        int firstNum = scanner.nextInt();
+        double firstNum = scanner.nextDouble();
 
         System.out.println("Enter the second number");
-        int secondNum = scanner.nextInt();
+        double secondNum = scanner.nextDouble();
 
         System.out.println("Type 'A' for addition, 'S' For subtraction, 'M' for multiplication and 'D' for division: ");
         String choice = scanner.next().toUpperCase();
 
-        switch (choice) {
-            case "A":
-                output = "The sum is " + (firstNum + secondNum);
-                break;
-
-            case "S":
-                output = "The difference is " + (firstNum - secondNum);
-                break;
-
-            case "D":
-                output = "The first number divided by second number is " + (firstNum / secondNum);
-                break;
-
-            case "M":
-                output = "The product of two numbers is " + (firstNum * secondNum);
-                break;
-
-            default:
-                output = "Wrong input";
-                break;
-        }
+        output = switch (choice) {
+            case "A" -> "The sum is " + (firstNum + secondNum);
+            case "S" -> "The difference is " + (firstNum - secondNum);
+            case "D" -> "The first number divided by second number is " + (firstNum / secondNum);
+            case "M" -> "The product of two numbers is " + (firstNum * secondNum);
+            default -> "Wrong input";
+        };
         System.out.println(output);
 
         System.out.println("_______________________________________________________________________");
         System.out.println(" ");
     }
+
+//    Multiplication table
 
     public static void multiTable() {
         Scanner scan = new Scanner(System.in);
@@ -139,6 +129,7 @@ public class Revision_Main {
         System.out.println("");
     }
 
+//Sum of even numbers
 
     public static void sumOfEven() {
         System.out.println("Sum of even numbers");
@@ -159,6 +150,7 @@ public class Revision_Main {
         System.out.println(" ");
     }
 
+//    FInd Factorial
     public static void findFactorial() {
         Scanner scanner = new Scanner(System.in);
 
@@ -172,6 +164,7 @@ public class Revision_Main {
         System.out.println(" ");
     }
 
+//    Factorial Helper function
     public static int factorial(int number) {
         if (number == 1) {
             return 1;
@@ -209,11 +202,11 @@ public class Revision_Main {
 
     public static String getFibonacciSequence(int n, int j, int k) {
 
-            if (n == j) {
-                return j + " ";
-            } else return (j + " ") + getFibonacciSequence(n, k, k + j);
-        }
+        if (n == j) {
+            return j + " ";
+        } else return (j + " ") + getFibonacciSequence(n, k, k + j);
     }
+}
 
 
 

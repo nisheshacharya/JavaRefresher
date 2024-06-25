@@ -1,0 +1,20 @@
+Classes:
+    1. User:
+        id
+        name
+
+    2. Admin extends User:
+        id
+        name
+
+    3. Member extends User:
+
+    4. Book:
+        id
+        name
+        author
+        isAvilable
+
+    5. Library
+        Books
+        User
