@@ -39,6 +39,6 @@ public class LibraryMain {
         publicLibrary.setAdmins(new Admin[]{admin1});
         publicLibrary.setAllBooks(new Book[]{book6, book7, book8});
 
-        publicLibrary.getDetails();g
+        publicLibrary.getDetails();
     }
 }
